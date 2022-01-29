@@ -441,10 +441,10 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (score <= 50) return '垃圾桶看到你都下饭';
-        if (score <= 100) return '逊啊垃圾桶';
-        if (score <= 150)  return '呜嘎嘎噶垃圾桶';
-        if (score <= 200) return '垃圾桶觉醒——抡王';
+        if (cps <= 5) return '垃圾桶看到你都下饭';
+        if (cps <= 6) return '逊啊垃圾桶';
+        if (cps <= 7)  return '呜嘎嘎噶垃圾桶';
+        if (cps <= 7.5) return '垃圾桶觉醒——抡王';
         return '你就是垃圾桶？';
     }
 
